@@ -1,5 +1,3 @@
 Find current User:
-  
-  
-    Dim userId: userId = mgRoot.currentEnvironment.getCurrentUserID
-	  Dim user: Set user = mgRoot.getObjectFromID(userID)
+  	Dim userId: userId = mgRoot.currentEnvironment.getCurrentUserID
+	Dim user: Set user = mgRoot.getObjectFromID(userID)
