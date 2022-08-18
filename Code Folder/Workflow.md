@@ -2,7 +2,7 @@
 
 
 <details>
-<summary> <font size="5"> Update Attributes in Workflow Mapping </font> 
+<summary> <font size="4"> Update Attributes in Workflow Mapping </font> 
 </summary>
 
 ```vb 
