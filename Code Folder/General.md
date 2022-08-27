@@ -58,3 +58,20 @@ CheckCondition = "Not Head of BU"
 ```
 </details>
 
+
+
+<details>
+<summary> <font size="4"> Sending MsgBox to User</font> 
+</summary>
+
+```vb 
+
+Dim mg 
+	if gate.getProp("~Tsi8aKa(YnRB[QA Check Done]") <> "Y" then
+		mg = "QA Check is not done. Can't request approval."
+		Call MsgBox(mg,64,"Attention!")
+	
+
+```
+</details>
+

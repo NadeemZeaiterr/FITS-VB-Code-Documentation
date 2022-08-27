@@ -113,3 +113,14 @@ Next
 
 ```
 </details>
+<details>
+<summary> <font size="4"> Redirect to a Ceratin Page on Next Wizard </font> 
+</summary>
+
+```vb 
+Sub WizPageNextChange(mwctxManager As MegaWizardContext, mppSourcePage As MegaPropertyPage, strTargetPageId As String)
+    strTargetPageId ="{F0FDE406-62E0-2544-FFFF-FFFFFFFFFFFF}"  'page GUI ID
+End Sub
+
+```
+</details>
