@@ -75,3 +75,37 @@ Dim mg
 ```
 </details>
 
+
+<details>
+<summary> <font size="4"> Parse Attributes to Numbers for Comparison </font> 
+</summary>
+
+```vb 
+Dim temp1,temp2
+	temp1 = del.getProp("~WfP1E(XwYn5R[Max Number of Major Non-Conformance]")
+	temp2 = del.getProp("~GgP1S(XwYv7R[Max Number of Minor Non-Conformance]")
+
+	Dim maxMajor,maxMinor 
+	maxMajor = CInt(temp1)
+	maxMinor = CInt(temp2)
+
+```
+</details>
+
+
+
+<details>
+<summary> <font size="4"> Connect Attributes to Object </font> 
+</summary>
+
+```vb 
+   Dim stnds : Set stnds = mgRoot.getSelection("Select [Standard] Where [Standard - Category] ='GS'")
+	 Dim stnd
+
+	For each stnd in stnds
+		Dim pStnd : Set pStnd = project.getCollection("~(TpoV(CwYfg6[Standard]").Add(stnd)
+
+	Next
+
+```
+</details>
