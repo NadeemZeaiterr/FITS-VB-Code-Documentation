@@ -47,3 +47,43 @@ End if
 End Function
 ```
 </details>
+
+
+
+<details>
+<summary> <font size="4">Launch Wizard from Workflow </font> 
+</summary>
+
+```vb 
+Option Explicit
+
+Sub SetWizardParameters(Root,objWorkflowSubject)
+
+  Dim objWizard
+  Dim subj
+  subj = objWorkflowSubject
+
+  Set objWizard = subj.CallMethod("~AfLYxbu47b00[WizardRun]", "~8O0vz2FuYfG9[Connect Deliverables to Gate]")
+
+  objWizard.Run
+ 
+End Sub  
+
+Function ExecuteAction(objWorkflowContextAction, strParameter)
+
+  ' Initializing variables
+  Dim mgRoot
+  Set mgRoot = objWorkflowContextAction.GetRoot
+
+  Dim mgobjWorkflowSubject
+  Set mgobjWorkflowSubject = objWorkflowContextAction.GetWorkflowSubject
+
+  Call SetWizardParameters(mgRoot,mgobjWorkflowSubject)
+
+  ExecuteAction= ""
+
+End Function
+
+
+```
+</details>
