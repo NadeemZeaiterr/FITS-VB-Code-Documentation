@@ -109,3 +109,28 @@ Dim temp1,temp2
 
 ```
 </details>
+
+
+<details>
+<summary> <font size="4"> Duplicate Object </font> 
+</summary>
+
+```vb 
+   mgRoot = getRoot()
+
+
+dim sbj : Set sbj = mgRoot.getObjectFromID("gLnG7vq1Z1n0")
+
+
+dim name: name = sbj.getProp("Short Name")
+
+
+Dim cpy: Set cpy = sbj.CreateDuplicate("CopyOfPlan","CopyOf")
+
+dim name1: name1 = cpy.getProp("Short Name")
+
+print(name1)
+
+
+```
+</details>
