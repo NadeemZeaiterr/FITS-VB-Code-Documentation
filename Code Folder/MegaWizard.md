@@ -1,6 +1,6 @@
 
 
-## Code Snippets by Related Suject Below:
+## Code Snippets by Related Subject Below:
 
 
 <details>
